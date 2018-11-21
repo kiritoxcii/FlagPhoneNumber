@@ -134,13 +134,13 @@ open class FPNTextField: UITextField, UITextFieldDelegate, FPNCountryPickerDeleg
 		flagButton.accessibilityLabel = "flagButton"
 		flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
 		flagButton.translatesAutoresizingMaskIntoConstraints = false
-		flagButton.setContentHuggingPriority(UILayoutPriority.defaultLow, for: .horizontal)
+		flagButton.setContentHuggingPriority(250, for: .horizontal)
 	}
 
 	private func setupPhoneCodeTextField() {
 		phoneCodeTextField.isUserInteractionEnabled = false
 		phoneCodeTextField.translatesAutoresizingMaskIntoConstraints = false
-		phoneCodeTextField.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .horizontal)
+		phoneCodeTextField.setContentHuggingPriority(750, for: .horizontal)
 	}
 
 	private func setupLeftView() {
